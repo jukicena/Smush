@@ -571,6 +571,19 @@ h2 {
   transition: all ease-in-out 150ms;
 }
 
+@media (min-width: 725px) {
+  .main-nav {
+    position: relative;
+    -webkit-box-flex: 1;
+    -ms-flex: auto;
+    flex: auto;
+    background: none;
+    margin-top: 1em;
+    margin-left: 2em;
+    left: 0;
+  }
+}
+
 .main-nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -584,6 +597,16 @@ h2 {
   height: 100vh;
 }
 
+@media (min-width: 725px) {
+  .main-nav ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    height: auto;
+  }
+}
+
 .main-nav li {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
@@ -592,6 +615,14 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (min-width: 725px) {
+  .main-nav li {
+    display: inline-block;
+    border: none;
+    text-align: right;
+  }
 }
 
 .main-nav a {
@@ -610,8 +641,31 @@ h2 {
   justify-content: center;
 }
 
+@media (min-width: 725px) {
+  .main-nav a {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 725px) {
+  .main-nav a {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+  }
+}
+
 .main-nav a:hover {
   background: rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 725px) {
+  .main-nav a:hover {
+    background: none;
+    color: #eb4d91;
+  }
 }
 
 .main-nav.is-open {
@@ -625,6 +679,12 @@ h2 {
   right: 1em;
   top: 1em;
   cursor: pointer;
+}
+
+@media (min-width: 725px) {
+  .nav-toggle {
+    display: none;
+  }
 }
 
 .hamburger, .hamburger::before, .hamburger::after {
@@ -712,6 +772,10 @@ footer ul {
   list-style-type: none;
 }
 
+.container-footer {
+  max-width: 25em;
+}
+
 .social-links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -729,7 +793,6 @@ footer ul {
   display: flex;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  width: 80%;
   margin: 0 auto;
 }
 
@@ -752,6 +815,7 @@ footer ul {
 
 .btn--primaryhover, .btn--primaryfocus {
   background: #8e1047;
+  border-color: #8e1047;
 }
 
 .btn--secondary {
