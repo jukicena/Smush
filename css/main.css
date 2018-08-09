@@ -389,7 +389,7 @@ template {
 }
 
 body {
-  color: #048ca8;
+  color: #cecece;
   text-align: center;
 }
 
@@ -421,7 +421,7 @@ img {
 }
 
 .bg-primary {
-  background: #048ca8;
+  background: #cecece;
   color: white;
   padding: 5em 2.5em;
 }
@@ -460,7 +460,7 @@ h2 {
 }
 
 .title-box {
-  background: #d31869;
+  background: #4c5c6a;
   color: white;
   margin: 0 auto;
   padding: 2em;
@@ -482,13 +482,13 @@ h2 {
   padding-top: 6em;
 }
 
-@media (min-width: 495px) {
+@media (min-width: 1043px) {
   .title-box + .bg-primary {
     padding-top: 8em;
   }
 }
 
-@media (min-width: 725px) {
+@media (min-width: 1043px) {
   .title-box {
     max-width: 700px;
   }
@@ -533,10 +533,10 @@ h2 {
 }
 
 .hero {
-  background: -webkit-gradient(linear, left top, right top, from(#048ca8), to(#16db93));
-  background: -webkit-linear-gradient(left, #048ca8, #16db93);
-  background: -o-linear-gradient(left, #048ca8, #16db93);
-  background: linear-gradient(to right, #048ca8, #16db93);
+  background: -webkit-gradient(linear, left top, right top, from(#95a7b0), to(white));
+  background: -webkit-linear-gradient(left, #95a7b0, white);
+  background: -o-linear-gradient(left, #95a7b0, white);
+  background: linear-gradient(to right, #95a7b0, white);
   color: white;
   padding-top: 8em;
   padding-bottom: 8em;
@@ -558,8 +558,17 @@ h2 {
   }
 }
 
+@media (min-width: 725px) {
+  .hero-img-large {
+    padding-left: 10px;
+    -webkit-transform: translateY(20%);
+    -ms-transform: translateY(20%);
+    transform: translateY(20%);
+  }
+}
+
 .main-nav {
-  background: #d31869;
+  background: #4c5c6a;
   position: absolute;
   top: 0;
   right: 0;
@@ -644,6 +653,8 @@ h2 {
 @media (min-width: 725px) {
   .main-nav a {
     display: inline-block;
+    color: #1a191a;
+    padding-top: 1em;
   }
 }
 
@@ -664,7 +675,7 @@ h2 {
 @media (min-width: 725px) {
   .main-nav a:hover {
     background: none;
-    color: #eb4d91;
+    color: #6d8396;
   }
 }
 
@@ -734,29 +745,23 @@ h2 {
 }
 
 .promo .img-box {
-  background: url(../img/phone-in-hand.jpg);
+  background: url(../img/quote-img.jpg);
   background-size: cover;
   background-position: center;
 }
 
-.sales-points {
+.promo .promo-quote {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+.interactive-section {
   padding: 10vh 0 0;
 }
 
-.sales-points .sales-point {
-  margin-bottom: 2.5em;
-}
-
-.sales-points .sales-point:first-of-type {
-  margin-bottom: 1.5em;
-}
-
-.sales-points .sales-point:last-child {
-  margin-bottom: 0;
-}
-
 footer {
-  background: #444;
+  background: #1a191a;
   color: white;
   padding: 5em 0;
   position: relative;
@@ -808,14 +813,14 @@ footer ul {
 }
 
 .btn--primary {
-  background: #d31869;
+  background: #4c5c6a;
   color: white;
-  border: 2px solid #d31869;
+  border: 2px solid #4c5c6a;
 }
 
 .btn--primaryhover, .btn--primaryfocus {
-  background: #8e1047;
-  border-color: #8e1047;
+  background: #2c353d;
+  border-color: #2c353d;
 }
 
 .btn--secondary {
@@ -825,12 +830,12 @@ footer ul {
 
 .btn--secondaryhover, .btn--secondaryfocus {
   background: white;
-  color: #048ca8;
+  color: #cecece;
 }
 
 .cta {
   background-color: white;
-  background-image: url(../img/call-to-action-background.jpg);
+  background-image: url(../img/cta-background1.jpg);
   background-size: cover;
   background-position: center;
   padding: 5em 0;
